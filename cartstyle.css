@@ -1,0 +1,183 @@
+.cart
+{
+    display:flex;
+    gap:20px;
+    margin:20px;
+}
+
+.leftCart{
+    background: white;
+    padding:20px;
+}
+
+.leftCart h1{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.leftCart hr{
+    border: none;
+    height:1px;
+    background:#dadada ;
+}
+
+.productCartList{
+    display:flex;
+    align-items: start;
+    gap:10px;
+    padding:24px 0 12px 12px;
+}
+
+.productCartTitlePrice{
+    display:flex;
+    gap:20px;
+    font-size: 18px;
+}
+
+.productCartBestSeller{
+    font-size:12px;
+    margin-top: 10px;
+}
+
+.productCartBestSeller span{
+    font-size: 13px;
+    background: #c45500;
+    color:white;
+    padding:3px 8px;
+}
+
+.stock{
+    font-size:13px;
+    color:#007600;
+    margin: 4px 0;
+}
+
+.delivery{
+    font-size: 15px;
+}
+
+.returns{
+    font-size: 15px;
+    color:#007185;
+    font-weight: 400;
+}
+
+.gifts{
+    color: #494949;
+    font-size: 13px;
+    margin:3px 0;
+}
+
+.gifts span{
+    color:#007185;
+}
+
+.cartSpecifications{
+    max-width:150px ;
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap:3px;
+    font-size:13px ;
+    margin: 7px 0;
+}
+
+.cartListActions{
+    display:flex;
+    gap:12px;
+    font-size: 14px;
+    color:#007185;
+}
+
+.cartListActions hr{
+    height:20px;
+    width:1px;
+    background: #cfcfcf;
+}
+
+.cartListActions select{
+    padding:5px;
+    border-radius: 6px;
+    background: #f3f3f3;
+}
+
+.cartListTotal{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.rightCart{
+    background: white;
+    padding:20px;
+    max-height:220px;
+    min-width:280px;
+}
+
+.cartFreeDelivery{
+    display:flex;
+    font-size: 13px;
+}
+
+.cartSubTotal{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cartGift{
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.rightCart button{
+    width:100%;
+    height:32px;
+    margin:15px 0;
+    background: #ffd814;
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.rightCart button:hover{
+    background: #ebc712;
+}
+
+.cartFooter
+{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:900px)
+{
+    .cart{
+        flex-wrap: wrap;
+    }
+    .rightCart{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    .productCartList{
+        padding: 24px 0;
+    }
+    .productCartList img{
+        width:80px;
+    }
+    .productCartTitlePrice{
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    .delivery{
+        font-size: 13px;
+    }
+    .cartListActions hr{
+        display:none;
+    }
+    .cartListActions p{
+        display: none;
+    }
+}

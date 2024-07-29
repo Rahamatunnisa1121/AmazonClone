@@ -1,0 +1,278 @@
+body{
+    background: #fff;
+}
+.breadcrum{
+    padding: 10px 20px;
+    font-size: 12px; 
+    color: #565656;
+}
+
+.productDisplay{
+    min-height: 100%;
+    padding: 10px 20px;
+    display:flex;
+}
+
+.productDisplayImage{
+    display:flex;
+    gap:10px;
+}
+
+.productDisplayIcons{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.productDisplayIcons img{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.productDisplayDetails{
+    margin: 0px 30px;
+}
+
+.productTitle{
+    font-size: 25px;
+}
+
+.brandStore{
+    margin-top: 5px;
+    color: #007185;
+    font-size: 14px;
+}
+
+.productRating{
+    display: flex;
+    flex-direction: column;
+    gap:10px;   
+}
+
+.productRating div{
+    display:flex;
+    align-items:center;
+}
+
+.productRating p{
+    color:#007185;
+}
+
+.productRating p span{
+    color:#fff;
+    background: #c73500;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.productRating h5{
+    font-weight:400 ;
+}
+
+.productsPrice{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.productsPrice div{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.productsPrice div{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin:10px 0px;
+}
+
+.productsPrice div p{
+    font-size: 26px;
+    color:#c73500;
+}
+
+.productsPrice div h1{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.productsPrice div h1 span{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.productsPrice h5{
+    font-weight: 400;
+    color: dark black;
+}
+
+.productsPrice h5 span{
+    text-decoration: line-through;
+}
+
+.productsPrice p span{
+    color:#007185;
+}
+
+.productColorSelection{
+    margin: 15px 0;
+}
+
+.productColorOptions{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #cbcbcb;
+    gap:10px;
+}
+
+.productInfo{
+    display:grid;
+    grid-template-columns: auto auto;
+    max-width: 300px ;
+    margin-bottom: 15px;
+}
+
+.productDescription h1{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.productDescription ul{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left: 30px;
+}
+
+.productDisplayPurchase{
+    width:100%;
+    max-width: 280px;
+    border:1px solid #c1c1c1;
+    border-radius: 10px;
+    padding:20px;
+}
+
+.productDisplayPurchase .title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productDisplayPurchase .price{
+    font-size: 16px;
+    font-weight: 400;
+    margin:10px 0;
+}
+.productDisplayPurchase .price span{
+    font-size: 26px;
+    padding: 2px;
+}
+
+.gap{
+    margin: 15px 0;
+}
+
+.productDisplayPurchase p span{
+    color:#007185
+}
+
+.deliveryLocation{
+    display:flex;
+    align-items: center;
+    gap:3px;
+}
+
+.productStock{
+    margin: 15px 0;
+    color:green;
+    font-weight: 400;
+}
+
+.productQuantity{
+    padding: 8px 5px;
+    outline:none;
+    width:100%;
+    border-radius: 5px;
+    background:#efefef;
+    border-color: #c1c1c1;
+}
+
+.btnAddToCart , .btnBuyNow{
+    outline:none;
+    border:none;
+    background: #ffd814;
+    width:100%;
+    padding:10px 0;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.productDisplayPurchase .btnBuyNow{
+    background-color: #ffa41c;
+}
+
+.productSellerInfo{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:4px;
+    font-size: 14px;
+    color:#565656;
+    margin-top: 10px;
+}
+
+.productDisplayPurchase hr{
+    margin:20px 0; 
+}
+
+.ProductAddList{
+    width:100%;
+    padding:8px 15px;
+    border-radius:5px ;
+    border: 1px solid #000;
+    text-align: start;
+    background: white;
+    cursor: pointer;
+}
+
+.productFooter
+{
+    margin-top:10px;
+}
+
+@media only screen and (max-width:900px)
+{
+    .productDisplay{
+        flex-wrap:wrap;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .productDisplayIcons{
+        display:none;
+    }
+    .productDisplayImage img{
+        width:100%;
+        padding:20px;
+    }
+    .option{
+        padding: 6px 8px;
+    }
+    .option p{
+        display:none;
+    }
+    .productDisplayPurchase{
+        max-width: 90%;
+        margin:20px auto 10px;
+    }
+}
