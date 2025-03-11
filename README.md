@@ -1,6 +1,7 @@
 # AmazonClone
 This project is a front-end clone of the Amazon website, developed using HTML, CSS, and JavaScript. The aim of this project is to replicate the look and feel of the Amazon website while ensuring responsiveness and dynamic navigation between various pages.
-![Interface](https://raw.githubusercontent.com/Rahamatunnisa1121/AmazoneClone/main/amazon_clone.png)
+
+![Interface](https://raw.githubusercontent.com/Rahamatunnisa1121/AmazonClone/main/amazon_clone.png)
 
 Features
 
